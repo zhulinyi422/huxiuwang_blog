@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>虎嗅网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="renderer" content="webkit">
+    <meta name="baidu-site-verification" content="R9XA5lWxu2" />
+    <meta name="author" content="虎嗅网">
+    <meta name="keywords" content="科技资讯,商业评论,明星公司,动态,宏观,趋势,创业,精选,有料,干货,有用,细节,内幕">
+    <meta name="description" content="聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。">
+    <meta name="base-static-url" content="https://statics.huxiu.com/www">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/build.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/activity.css">
+    <link href="/static/css/login.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/zzsc.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/dlzc.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/static/js/main.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/js/popwin.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/home/jquery.form.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/home/template.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/home/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/home/js/search.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/nanoscroller.css">
+    <script type="text/javascript">
+        var uid='0';
+        var username='';
+        var is_vip='';
+        var huxiu_hash_code='0662ca91c22ec8a45e1ca90563e972cf';
+        var aid=0;
+
+        var itemId = '0';
+        var signAna = '0';
+        var signTime = '0';
+        var productId = '0';
+        var channel = 'huxiu';
+        var refer = 'https://www.huxiu.com/';
+
+        var order_api_host = 'https://order-api.huxiu.com';
+
+        var relatedArticle = '';
+        var url=window.location.href;
+        var str1=new RegExp('rec=man');
+        var str2=new RegExp('rec=sim');
+        if(str1.test(url)){
+            relatedArticle = 'manual';
+        } else if (str2.test(url)) {
+            relatedArticle = 'similar';
+        }
+
+        var cookiepre='HUXIU_016a_';
+        var _hmt = _hmt || [];
+        _hmt.push(['_setAccount', '324368ef52596457d064ca5db8c6618e']);
+        var isLogin = "noLogin";
+        _hmt.push(['_setCustomVar', 1, 'login', isLogin, 2]);
+
+        var comment_api_url = "https://comment-api.huxiu.com";
+        var huxiu_url = "https://www.huxiu.com";
+    </script>
+
+        <script type='text/javascript'>
+        !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+        gio('init', 'b6a739d69e7ea5b6', {});
+        gio('setUserId', '0');
+        gio('send');
+    </script>
+
+</head>
+<div class="message-prompt"></div>
+<body>
+<script type="text/javascript">
+
+</script>
+<div id="login-reg-warp" class="login-reg-warp-modal">
+
+</div>
+<div class="search-box" id="search-box">
+    <i class="icon icon-search-close js-show-search-box"></i>
+
+    <div class="search-content">
+
+        <div class="search-input">
+
+        </div>
+        <div class="search-history hide" id="history">
+            <span>我的搜索历史</span>
+            <ul class="transition" id="history_ul">
+            </ul>
+            <div class="pull-right empty-history js-empty-history">清空历史</div>
+        </div>
+                <div class="search-history search-hot">
+            <strong>热搜词</strong>
+            <ul>
+                                <li class="transition"><a href="/search.html?s=头条">头条</a></li>
+                                <li class="transition"><a href="/search.html?s=姜文">姜文</a></li>
+                                <li class="transition"><a href="/search.html?s=疫苗">疫苗</a></li>
+                                <li class="transition"><a href="/search.html?s=长生生物">长生生物</a></li>
+                                <li class="transition"><a href="/search.html?s=朋友圈">朋友圈</a></li>
+                                <li class="transition"><a href="/search.html?s=3D打印">3D打印</a></li>
+                                <li class="transition"><a href="/search.html?s=张路">张路</a></li>
+                                <li class="transition"><a href="/search.html?s=中国足球">中国足球</a></li>
+                                <li class="transition"><a href="/search.html?s=娱乐">娱乐</a></li>
+                            </ul>
+        </div>
+            </div>
+</div>
+<!--[if lt IE 9]>
+    <style type="text/css">
+        .search-box{
+            background-color: #fff !important;
+        }
+        header .header-column{
+            background-color: #fff !important;
+        }
+        header .navbar-right,header .navbar-left{
+            margin-top: -15px;
+        }
+        .icon-search{
+            position: relative;
+            top: 18px;
+        }
+        body{
+            border: none;
+        }
+        .praise-box-add,.icon-like-prompt,.icon-no-like-prompt{
+            display: none;
+        }
+    </style>
+
+<![endif]--><header id="top" role="banner" class="transition">
+    <div class="container">
+        <div class="navbar-header transition">
+            <a href="/" title="首页">
+                <img src="https://static.huxiucdn.com/www/image/logo/logo.jpg" alt="虎嗅网" title="首页" />
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="nav-news js-show-menu">
+            <!--header-column3-->
+                                <ul class="header-column header-column1 header-column-zx menu-box" onmouseover="isOut=false" onmouseout="isOut=true">
+                                                    <li><a href="/channel/103.html" target="_blank" class="transition">电商消费</a></li>
+                                                    <li><a href="/channel/22.html" target="_blank" class="transition">娱乐淘金</a></li>
+                                                    <li><a href="/channel/106.html" target="_blank" class="transition">雪花一代</a></li>
+                                                    <li><a href="/channel/104.html" target="_blank" class="transition">人工智能</a></li>
+                                                    <li><a href="/channel/21.html" target="_blank" class="transition">车与出行</a></li>
+                                                    <li><a href="/channel/105.html" target="_blank" class="transition">智能终端</a></li>
+                                                    <li><a href="/channel/111.html" target="_blank" class="transition">医疗健康</a></li>
+                                                    <li><a href="/channel/102.html" target="_blank" class="transition">金融地产</a></li>
+                                                    <li><a href="/channel/110.html" target="_blank" class="transition">企业服务</a></li>
+                                                    <li><a href="/channel/2.html" target="_blank" class="transition">创业维艰</a></li>
+                                                    <li><a href="/channel/112.html" target="_blank" class="transition">社交通讯</a></li>
+                                                    <li><a href="/channel/107.html" target="_blank" class="transition">全球热点</a></li>
+                                                    <li><a href="/channel/4.html" target="_blank" class="transition">生活腔调</a></li>
+                                            </ul>
+                            <a href="/">资讯 <span class="caret"></span></a>
+            </li>
+
+            <li class="nav-news" style="display: none;"><a href="/topic_list" target="_blank">热议<span class="nums-prompt nums-prompt-topic"></span></a></li>
+            <li class="nav-news"><a href="/moment" class="js-nav-24" target="_blank">24小时</a></li>
+            <li class="nav-news"><a href="/active" target="_blank">活动</a></li>
+            <li class="nav-news"><a href="/chuangye" target="_blank">创业白板<span class="nums-prompt"></span></a></li>
+            <li class="nav-news js-show-menu">
+                <ul class="vip-menu menu-box header-column " onmouseover="isOut=false" onmouseout="isOut=true">
+<!--                 --><!--                    <li><a href="/vipColumn/contentList/--><?//=$cval['id']?><!--">--><?//=$cval['name']?><!--</a></li>-->
+<!--                 -->                    <li><a href="/vip" target="_blank">黑卡</a></li>
+                    <li><a href="/vipColumn/contentList/3" target="_blank">深案例</a></li>
+                    <li><a href="/vipColumn/contentList/2" target="_blank">大咖私房话</a></li>
+                    <li><a href="/vipColumn/contentList/4" target="_blank">私房话实录</a></li>
+                    <li><a href="/vipColumn/contentList/5" target="_blank">财报透露的真相</a></li>
+                    <li><a href="/vipColumn/contentList/7" target="_blank">从破局到增长指南</a></li>
+                    <li><a href="/vipColumn/contentList/8" target="_blank">区块链案例全解析</a></li>
+                    <li><a href="/vipColumn/contentList/10" target="_blank">铁三角饱和攻击</a></li>
+                </ul>
+                <a href="/vip" target="_blank">虎嗅精选<em class="nums-prompt"></em><span class="caret"></span></a>
+
+            </li>
+            <li class="nav-news"><a href="https://blog.huxiu.com" target="_blank">官方Blog</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right transition">
+            <li class="app-guide js-app-guide" >
+                <div class="app-guide-box">
+                    <img src="https://img.huxiucdn.com/article/content/201603/25/1448211685.png?|imageMogr2/strip/interlace/1/quality/85/format/png">
+                    <div class="app-guide-title">
+                        <span>微信扫一扫</span><br>
+                        <span>下载虎嗅APP</span>
+                    </div>
+                </div>
+                <i class="icon icon-sm-phone"></i>APP下载<em class="guide-prompt"></em>
+            </li>
+            <li class="search-li js-show-search-box"><i class="icon icon-search "></i><span>搜索</span></li>
+                        <li class="login-link-box"><a class="js-login">登录</a></li>
+            <li><a class="js-register">注册</a></li>
+                        <li class="common-head-tg"><a class="js-open-contribute transition" target="_blank">投稿</a></li>
+        </ul>
+    </div>
+</header>
+<div class="placeholder-height"></div><div class="container">
+    <div class="wrap-left pull-left">
+        <form role="search" method="get" action="/search.html">
+            <input class="search-input-list" name="s" value=""><button typy="submit" class="search-btn transition"><i class="icon icon-search-list"></i></button>
+        </form>
+        <div class="search-sort-wrap">
+            <a class="js-search-sort active" href="/search.html?s=美女&sort=">相关度</a>
+            <a class="js-search-sort" href="">最新</a>
+        </div>
+        <div class="search-list-warp">
+                        <ul class="search-wrap-list-ul">
+
+ </ul>
+            {% raw %}
+            <script id="info_ul" type="text/html">
+                {{ each articles as article }}
+                <li>
+                    <h2><a href="/info/article_info/?id={{ article.id }}" target="_blank">{{ article.title }}</a></h2>
+                    <div class="mob-summay">{{ article.content }}</div>
+                    <div class="mob-author">
+                        <span class="name"><a target="_blank" href="/member/1946534.html">{{ article.auth }}</a></span><span class="time">2018-06-19 08:42</span>
+                    </div>
+                </li>
+                {{ /each }}
+            </script>
+            {% endraw %}
+            <nav class="page-nav"><ul class="pagination"><li class="disabled"><a href="#" aria-label="First"><span aria-hidden="true"><i class="icon icon-first"></i></span></a></li><li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="icon icon-lt"></i></span></a></li><li class="active"><a>1</a></li><li><a href="/search.html?s=%E7%BE%8E%E5%A5%B3&sort=&per_page=2">2</a></li><li><a href="/search.html?s=%E7%BE%8E%E5%A5%B3&sort=&per_page=3">3</a></li><li><a href="/search.html?s=%E7%BE%8E%E5%A5%B3&sort=&per_page=4">4</a></li><li><a href="/search.html?s=%E7%BE%8E%E5%A5%B3&sort=&per_page=2"><i class="icon icon-gt"></i></a></li><li><a href="/search.html?s=%E7%BE%8E%E5%A5%B3&sort=&per_page=96"><i class="icon icon-last"></i></a></li></ul></nav>                    </div>
+    </div>
+    <div class="wrap-right pull-right">
+        <div class="box-moder moder-project-list moder-user-list">
+            <h3><b>相关用户</b></h3>
+            <span class="span-mark"></span>
+                        <div class="no-relevant-info">
+                暂无相关用户
+            </div>
+                    </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="modal-backdrop fade in js-modal-backdrop"></div>
+    <div class="feedback-box" onmouseover="is_feedback=false" onmouseout="is_feedback=true">
+
+        <div class="close-box pull-right js-feedback-close" data-show="true">
+            <i class="icon icon-close"></i>
+        </div>
+        <div class="will-choose">*</div>
+        <textarea id="content" class="form-control" placeholder="请输入反馈，我们将为您不断改进"></textarea>
+        <input class="form-control" id="contact" placeholder="请输入手机/邮箱">
+        <a class="btn btn-article pull-left js-feedback-submit transition">提交</a><span class="will-choose-error">请输入反馈信息</span>
+    </div>
+
+    <div class="go-top-box js-go-top-box">
+
+        <div class="go-top transition js-show-feedback-box">
+            <div class="go-hover transition">
+                用户反馈
+            </div>
+            <i class="icon-footer-right i-reply"></i>
+        </div>
+
+        <div class="go-top app-feedback js-app-feedback transition">
+            <div class="app-footer-guide">
+                <img src="https://img.huxiucdn.com/article/content/201603/25/1450293529.png?|imageMogr2/strip/interlace/1/quality/85/format/png">
+                <span style="color: #333;line-height:2;">微信扫一扫</span>
+            </div>
+            <i class="icon-footer-right i-qr"></i>
+        </div>
+
+        <div class="go-top go-footer js-go-top transition" id="go-top-btn">
+            <div class="go-hover transition">
+                回到顶部
+            </div>
+            <i class="icon-footer-right i-top"></i>
+        </div>
+
+    </div>
+
+    <div class="container copy-right">
+        <div class="footer-tag-list">
+            <a href="/about.html" target="_blank" class="transition">关于我们</a>
+            <a href="/joinus.html" target="_blank" class="transition">加入我们</a>
+            <a href="/links" target="_blank" class="transition">合作伙伴</a>
+            <a href="/contact.html" target="_blank" class="transition">广告及服务</a>
+            <a href="/help" target="_blank" class="transition">常见问题解答</a>
+            <a href="/tags/10340.html" target="_blank" class="transition">防网络诈骗专题</a>
+        </div>
+        <span>Copyright © <a href="https://www.huxiu.com">虎嗅网</a> <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备12013432号-1</a>
+            &nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102001402" target="_blank"><i class="i-wj"></i>京公网安备 11010102001402号</a>&nbsp;&nbsp;&nbsp;<em class="bull-right">本站由</em><i class="icon-aliyun" style="width: 70px;background-size: 100%;left: 7px;"></i><em class="bull-em">提供计算与安全服务</em>
+        </span>
+        <div class="footer-icon-list pull-right">
+            <ul>
+                <a><li class="Qr-code-footer">
+                    <div class="app-qrcode">
+                        <img src="https://static.huxiucdn.com/www/static_2015/img/weixin_erweima.png">
+                    </div>
+                    <i class="icon icon-footer icon-footer-wx"></i>
+                </li>
+                </a>
+                <a><li class="Qr-code-footer">
+                    <div class="app-qrcode">
+                        <img src="https://static.huxiucdn.com/www/static_2015/img/app_erweima.png">
+                    </div>
+                    <i class="icon icon-footer icon-footer-ios"></i>
+                </li>
+                </a>
+                <a><li class="Qr-code-footer">
+                    <div class="app-qrcode">
+                        <img src="https://static.huxiucdn.com/www/static_2015/img/app_erweima.png">
+                    </div>
+                    <i class="icon icon-footer icon-footer-android"></i>
+                </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="https://static.huxiucdn.com/common/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://static.huxiucdn.com/www/js/jquery.detection.js"></script>
+<script type="text/javascript" src="https://static.huxiucdn.com/common/sea/sea.js?v=201806251433"></script>
+<script type="text/javascript">
+    var base_static_url = $('meta[name="base-static-url"]').attr('content');
+    seajs.config({
+        base: (!!base_static_url) ? base_static_url + '/static_2015/js/' : '/static_2015/js/',
+        comboSyntax: ['??', ','],
+        alias: {
+            'jquery': 'jquery-1.11.1.min',
+            'bootstrap': 'bootstrap.min',
+            'sea_combo_flush': 'sea_combo_flush.js',
+            'cookie': 'jquery.cookie',
+            's_css': 'seajs_css'
+        },
+        'map': [
+            [/^(.*\.(?:css|js))(.*)$/i, '$1?v=201807191615']
+        ],
+        charset: 'utf-8'
+    });
+    seajs.use(['init']);
+</script>
+<script type="text/javascript" src="https://static.huxiucdn.com/common/sea/seajs_css.js?v=201803270940"></script>
+
+<script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+
+
+<script type="text/javascript">
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+
+</script>
+
+<script type="text/javascript">
+    //文章内容页里有序列表样式
+    var ol = $('ol');
+    ol.each(function(){
+        var t = $(this);
+        if(t.find('span.text-remarks').length>0){
+            var remarkColor = t.find('span.text-remarks').css("color");
+            t.css({
+                'color': remarkColor
+            })
+        }
+        if(t.find('span.text-hxzhu').length>0){
+            var hxzhuColor = t.find('span.text-hxzhu').css("color");
+            t.css({
+                'color': hxzhuColor
+            });
+        }
+    });
+
+</script><script>
+    /*
+     * 搜索排序切换
+     * */
+    $(document).on('click','.js-search-sort',function(){
+        $('.js-search-sort').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+</body>
+</html>

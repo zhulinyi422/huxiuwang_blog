@@ -82,3 +82,11 @@ class Comment(BaseModel,db.Model):
     user_id = db.Column(db.Integer,db.ForeignKey('user.id'),nullable=True)
     article_id = db.Column(db.Integer,db.ForeignKey('article.id'),nullable=True)
 
+    def to_dict(self):
+        return {
+            'id':self.id,
+            'content':self.content,
+            'user_avatar':self.user.avatar,
+            'user_name':self.user.name
+        }
+

@@ -226,20 +226,22 @@
               <div class="pl-wrap" id="pl-wrap-article197460" name="pl-wrap-article">
                    <div class="pl-form-wrap">
                         <span class="span-mark-author active">发表评论</span>
-                        <div class="pl-form-box pl-article-wrap">
-                             <div class="no-login-box "><a class="js-login">登录</a>后参与评论</div>
-                             <textarea class="form-control hide" id="saytext197460" name="saytext" placeholder="客官，8个字起评，不讲价哟"></textarea>
-                             <!--普通文章评论发表-->
-                             <button class="btn btn-article js-login transition ">发表</button>
-                        </div>
                    </div>
+				  <form id="comment_form" onsubmit="return false;">
+					  <textarea style="width: 700px;height: 250px" id="info"></textarea>
+					  <input type="submit" value="提交" id="test">
+				  </form>
                    <div id="pl-wrap197460" name="pl-wrap"></div>
                    <div class="pl-list-wrap">
                         <div class="pl-loading hide"><img src="/static_2015/img/pl-loading.gif"></div>
                         <a href="javascript:void(0)" class="span-mark-author active js-default-new-pl" data-type="agree">默认评论</a>
-                        <i class="icon icon-line-pl"></i>
-                        <a href="javascript:void(0)" class="span-mark-author new js-default-new-pl" data-type="dateline">最新评论</a>
-                        <div class="pl-box-wrap">
+
+              </div>
+              </div>
+                  {% raw %}
+                  <script type="text/html" id="com-list">
+                  {{ each comments as comment }}
+                  <div class="pl-box-wrap">
                 			<div class="pl-box-top">
             					<div class="dropdown pull-right">
                 					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -247,11 +249,11 @@
                 					</button>
             					</div>
             					<div class="author-info">
-                					<div class="author-face"><img src="https://img.huxiucdn.com/auth/data/avatar/001/54/60/18_1479690318.jpg?|imageMogr2/strip/interlace/1/quality/85/format/jpg"></div>
-                					<span class="author-name"><a href="#">请叫我__宝器</a><a href="/vip" target="_blank"></a></span>
+                					<div class="author-face"><img src="/static/{{ comment.user_avatar }}"></div>
+                					<span class="author-name"><a href="#">{{ comment.user_name }}</a><a href="/vip" target="_blank"></a></span>
                 					<span class="time">6天前</span>
             					</div>
-            					<div class="pl-content">三个这么浅显的例子和分析就能让作者得出结论，这"一叶知秋"的本事我也是服的。</div>
+            					<div class="pl-content">{{ comment.content }}</div>
                     		</div>
         					<div class="pl-box-btm">
                             	<div class="article-type pull-right">
@@ -272,94 +274,13 @@
                 					<button class="btn btn-article js-article-dp">发表</button>
             					</div>
         					</div>
-                            
-    					</div>
-    					<div class="pl-box-wrap  " data-pid="644658" id="g_pid644658">
-                			<div class="pl-box-top">
-            					<div class="dropdown pull-right">
-                					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    					<span class="caret"></span>
-                					</button>
-                					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li class="pl-report js-report-pl" aid="197460" pid="644658">举报</li>
-                					</ul>
-            					</div>
-            					<div class="author-info">
-                					<div class="author-face"><img src="https://img.huxiucdn.com/auth/data/avatar/001/68/30/86_1496144520.jpg?|imageMogr2/strip/interlace/1/quality/85/format/jpg"></div>
-                					<span class="author-name">
-                    					<a href="#">lingboxiu</a>
-                    					<a href="#" target="_blank"></a>
-                					</span>
-                					<span class="time">6天前</span>
-            					</div>
-            					<div class="pl-content">小罐茶，记得是非常非常贵</div>
-                            	<div class="dp-box">
-                    				<span class="span-mark-author">点评</span>
-                                    <div class="dl-user dl-user-list  " data-type="dl-user" style="display:block">
-                            			<ul>
-                                            <li class="del-pl108924"><a href="#" target="_blank"><img src="https://img.huxiucdn.com/auth/data/avatar/3.jpg?|imageMogr2/strip/interlace/1/quality/85/format/jpg"></a></li>
-                                        </ul>
-                                                   <!--只有一条点评时显示-->
-                                		<div class="one-pl-content one-pl-content-box">
-                                    		<div class="pull-right time">6天前</div>
-												 <p class="content">
-                                        			<span class="name">寂地_</span>
-                                        			<a href="#" target="_blank"></a>&nbsp;&nbsp;
-                                        			<span class="author-content">@lingboxiu 马云家有，对我尔等来说确实是灰常贵</span>
-                                    			 </p>
-                                    			 <div class="js-hf-article-pl"><span>回复</span></div>
-                                                 <div class="hu-pl-box">
-                                        			  <textarea class="form-control" placeholder="客官，8个字起评，不讲价哟"></textarea>
-                                        			  <button class="btn btn-article js-article-dp" data-type="hf">发表</button>
-                                    			 </div>
-                                			</div>
-                                        </div>
-                        				<div class="dp-list-box" style="display:none">
-                                               <div class="dl-user del-pl108924">
-                                    				    <ul>
-                                        					<li><a href="#" target="_blank"><img src="https://img.huxiucdn.com/auth/data/avatar/3.jpg?|imageMogr2/strip/interlace/1/quality/85/format/jpg"></a></li>
-                                    					</ul>
-                                    					<div class="one-pl-content">
-                                        				 	 <div class="pull-right time">6天前</div>
-                                       						 <p class="content">
-                                            					<span class="name">寂地_</span>
-                                            					<a href="#" target="_blank"></a>&nbsp;&nbsp;
-                                            					<span class="author-content"><a href="#" target="_blank">@lingboxiu</a> 马云家有，对我尔等来说确实是灰常贵</span>
-                                       						 </p>
-                                        					 <div class="js-hf-article-pl"><span>回复</span></div>
-                                                             <div class="hu-pl-box">
-                                            					<textarea class="form-control" placeholder="客官，8个字起评，不讲价哟"></textarea>
-                                            					<button class="btn btn-article js-article-dp" data-type="hf">发表</button>
-                                        					 </div>
-                                    					 </div>
-                                					</div>
-                                                    <div class="close-dp-list-box js-show-hide-dp-box" data-buttom="true">收起</div>
-                                              </div>
-                						</div>
-                    			</div>
-          						<div class="pl-box-btm">
-            						<div class="article-type pull-right">
-                						<div class="icon-like-prompt">
-                    						<i class="icon icon-like active"></i><span class="c1">+1</span>
-                						</div>
-                						<div class="icon-no-like-prompt">
-                    						<i class="icon icon-no-like active"></i><span class="c1">+1</span>
-                						</div>
-                						<ul>
-                    						<li class="js-icon-like" data-type="like"><i class="icon icon-like "></i><span class="like">2</span></li>
-                    						<li class="js-no-icon-like" data-type="no-like"><i class="icon icon-no-like "></i><span class="like">1</span></li>
-                						</ul>
-            						</div>
-            						<div class="btn-dp transition js-add-dp-box"><i class="icon icon-dp"></i>我要点评</div>
-            						<div class="pl-form-box dp-article-box">
-                						<textarea class="form-control" placeholder="客官，8个字起评，不讲价哟"></textarea>
-                						<button class="btn btn-article js-article-dp">发表</button>
-            						</div>
-        						</div>
-    						</div>
 
-                       </div>
-              </div>
+    					</div>
+				   </div>
+                  {{ /each }}
+                  </script>
+                  {% endraw %}
+
                     <!--相关文章位置-->
               <div id="related-article-wrap197460"></div>
 		</div>
